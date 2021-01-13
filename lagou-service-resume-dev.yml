@@ -1,29 +1,4 @@
-server:
-  port: 8080
-spring:
-  application:
-    name: lagou-service-resume
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8
-    username: root
-    password: root
-  jpa:
-    database: MySQL
-    show-sql: true
-    hibernate:
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  #避免将驼峰命名转换为下划线命名
-
-#注册到eureka服务中心
-eureka:
-  client:
-    service-url:
-      #注册到集群，就把多个Eureka Server 地址使用逗号连接起来即可；注册到单实例，就写一个即可
-      default-zone: http://LagouCloudEurekaServerA:8761/eureka,http://LagouCloudEurekaServerB:8762/eureka
-  instance:
-    prefer-ip-address: true   #服务实例中显示IP，而不是显示主机名。(为了兼容老的eureka)
-    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@    #实例名称： bogon:lagou-cloud-eureka-server:8761，我们可以自定义他(目前就是自定义的)
-    metadata-map:   #自定义元数据
-      name: weishuai
-      sex: boy
+lagou:
+  message: lagou-message
+mysql:
+  url: mysql-url
