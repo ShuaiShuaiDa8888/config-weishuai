@@ -1,4 +1,4 @@
 lagou:
-  message: lagou-message-300
+  message: lagou-message-500
 mysql:
-  url: mysql-url-300
+  url: mysql-url-500
