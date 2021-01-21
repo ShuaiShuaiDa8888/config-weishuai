@@ -15,5 +15,5 @@ spring:
 time:
   interval: 60000
 request:
-  limit: 3
+  limit: 2
   
