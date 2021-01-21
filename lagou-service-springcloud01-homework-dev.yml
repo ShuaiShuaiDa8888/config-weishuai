@@ -10,3 +10,9 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
+
+
+time:
+  interval: 60000
+request:
+  limit: 2
