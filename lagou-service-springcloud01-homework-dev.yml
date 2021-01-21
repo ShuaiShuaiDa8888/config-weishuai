@@ -16,3 +16,5 @@ time:
   interval: 60000
 request:
   limit: 2
+  
+lagou: lagou
