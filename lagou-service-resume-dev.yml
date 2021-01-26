@@ -1,2 +1,4 @@
-lagou.message: lagouMessage
-mysql.url: mysqlUrl
+lagou: 
+  message: lagouMessage
+mysql: 
+  url: mysqlUrl
